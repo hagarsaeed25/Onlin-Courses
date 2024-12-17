@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gainsboro: #dbdbdb;
+  --bleu-de-france: #2d8dd5;
+  --bright-gray: #e5e7eb;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.hero{
+  background-image: url(../images/hero.webp);
+  background-size: cover;
+  background-position: center;
+}
+.hero .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: calc(100vh - 98px);
+  padding-bottom: 50px;
+} 
+.hero .container h1{
+  font-weight: 500;
+  font-size: 40px;
+  font-family:  "Roboto", sans-serif;
+}
+.hero .container div{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.hero .container div a{
+  color: var(--black);
+  background-color: var(--white);
+  width: 165px;
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+.banner{
+  padding-top: 75px;
+}
+.banner img{
+  width: 100%;
+  border-radius: 50px;
+}
+.features{
+  padding: 75px 0;
+}
+.features .container{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.features .feature{
+  width: 389px;
+  background-color: var(--gainsboro);
+  border-radius: 50px;
+  text-align: center;
+  padding: 54px 29px;
+}
+.features .feature span{
+  display: block;
+  margin: 24px 0;
+}
+
+.our-Learners{
+  padding-bottom: 200px;
+}
+.our-Learners h2{
+  text-align: center;
+  font-size: 48px;
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+}
+.our-Learners .company-list{
+  display: flex;
+  gap:30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.our-Learners .company-list img {
+  width: 251px;
+}
+footer .footer-navbar {
+  padding: 75px 0;
+}
+.footer-navbar .container{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+footer .footer-navbar h3{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto"  sans-serif;
+  margin-bottom: 25px;
+  line-height: 21.09px;
+}
+.footer-navbar .container a{
+  display: block;
+  padding: 7px 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+}
+footer .subscrip{
+padding: 0 30px;
+}
+footer .subscrip p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+footer .subscrip .subscrip-form .email{
+  padding: 15px;
+  background-color: var(--bright-gray);
+  border: none;
+  outline: none;
+}
+footer .subscrip .subscrip-form .submit{
+  background-color: var(--bleu-de-france);
+  border: none;
+  padding: 20px;
+  width: 123px;
+  border-radius: 50px;
+color: var(--white);
+cursor: pointer;
+margin-left: 15px;
+flex-wrap:wrap;
+}
+
+footer .copyright {
+  padding: 20px 0;
+}
+.copyright .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .copyright p {
+  font-size: 12px;
+  font-weight: 300;
+}
+footer .copyright ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

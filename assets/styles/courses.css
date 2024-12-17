@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gainsboro: #dbdbdb;
+  --bleu-de-france: #2d8dd5;
+  --bright-gray: #e5e7eb;
+}
+body{
+font-family: "Roboto" sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+img{
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+section {
+  padding: 60px 0;
+}
+.hero{
+background-image: url(../images/course-hero.webp);
+background-position: center;
+background-size: cover;
+}
+.hero .container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 30px;
+}
+.hero .container h1{
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 700;
+}
+.hero .container p{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+}
+.hero form input{
+  display: block;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius:5px;
+}
+.hero form .search-input{
+width: 260px;
+background-color: var(--white);
+margin-bottom: 35px;
+}
+.hero form .search-btn{
+  width: 240px;
+  background-color: var(--black);
+  color: var(--white);
+  margin: auto;
+}
+.main-title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.courses-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.course {
+  border: 1px solid var( --gainsboro);
+  
+}
+.courses .courses-list .course .info {
+  padding: 12px;
+}
+.courses .info h3{
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+}
+.courses .info span{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+.courses-details .courses-list .course {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+.courses-benefits .benefits-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.courses-benefits .benefits-list .benefit {
+  text-align: center;
+}
+.courses-benefits .benefits-list .benefit img{
+  width: 80px;
+}
+.courses-benefits .benefits-list .benefit h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.courses-benefits .benefits-list .benefit p {
+  font-size: 16px;
+  color: rgb(0 0 0 / 0.5);
+}
